@@ -8,39 +8,38 @@
 }
 
 body {
-    min-height: 100vh;
-    background: linear-gradient(#1c1917 50%, #ffb92a 50%);
-    padding: 2em 1em;
-  }
-  .container {
-    font-size: 16px;
-    width: 90vw;
-    max-width: 37.5em;
-    padding: 3em 1.8em;
-    background-color: #1e293b;
-    border-radius: 0.6em;
-    box-shadow: 1.2em 2em 3em rgba(0, 0, 0, 0.2);
-    margin: 0 auto; /* Center horizontally */
-  }
-
-.searchContainer {
-  display: grid;
-  grid-template-columns: 9fr 3fr;
-  gap: 1.2em;
+  min-height: 100vh;
+  background: linear-gradient(#1c1917 50%, #ffb92a 50%);
+  padding: 2em 1em;
 }
 
-.searchContainer input,
-.searchContainer button {
-  font-size: 0.9em;
-  outline: none;
-  border-radius: 0.3em;
+.container {
+  font-size: 16px;
+  width: 90vw;
+  max-width: 37.5em;
+  padding: 3em 1.8em;
+  background-color: #1e293b;
+  border-radius: 0.6em;
+  box-shadow: 1.2em 2em 3em rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+}
+
+.searchContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.8em;
+  margin-bottom: 1.5em;
 }
 
 .searchContainer input {
+  flex: 1;
   background-color: transparent;
   border: 1px solid #a0a0a0;
   color: #fff;
-  padding: 0.7em;
+  padding: 0.75em 1em;
+  font-size: 1em;
+  border-radius: 0.4em;
 }
 
 .searchContainer input:focus {
@@ -48,9 +47,15 @@ body {
 }
 
 .searchContainer button {
+  padding: 0.75em 1em;
   background-color: #ffb92a;
   border: none;
+  border-radius: 0.4em;
+  color: #000;
+  font-size: 1em;
+  font-weight: 500;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 #result {
@@ -164,18 +169,18 @@ h2 {
 }
 
 .channel-promo {
-    margin-top: 2em; /* Space above promo section */
-    margin-bottom: 1em; /* Optional: Space below for padding */
-    background-color: #111827;
-    padding: 1em;
-    border-radius: 0.6em;
-    display: flex;
-    align-items: center;
-    gap: 1em;
-    justify-content: center;
-    box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
-    text-align: center;
-  }
+  margin-top: 2em;
+  margin-bottom: 1em;
+  background-color: #111827;
+  padding: 1em;
+  border-radius: 0.6em;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  justify-content: center;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
 
 .channel-promo a {
   display: flex;
@@ -195,13 +200,25 @@ h2 {
 }
 
 @media screen and (max-width: 600px) {
-    .channel-promo {
-      flex-direction: column;
-      gap: 0.8em;
-      padding: 1em;
-    }
-    .channel-promo a {
-      flex-direction: column;
-      gap: 0.6em;
-    }
+  .channel-promo {
+    flex-direction: column;
+    gap: 0.8em;
+    padding: 1em;
   }
+
+  .channel-promo a {
+    flex-direction: column;
+    gap: 0.6em;
+  }
+
+  .searchContainer {
+    flex-direction: column;
+    gap: 0.6em;
+  }
+
+  .searchContainer input,
+  .searchContainer button {
+    width: 100%;
+    font-size: 1em;
+  }
+}
