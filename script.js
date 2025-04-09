@@ -18,7 +18,7 @@ let getMovie = () => {
           result.innerHTML = `
             <div class="info">
               <div class="left">
-                <img class="poster" src="${data.Poster !== "N/A" ? data.Poster : "./placeholder.jpg"}" alt="movie poster">
+                <img class="poster" src="${data.Poster}" alt="movie poster">
               </div>
               <div class="right">
                 <h2>${data.Title}</h2>
@@ -54,4 +54,4 @@ let getMovie = () => {
 };
 
 searchBtn.addEventListener("click", getMovie);
-window.addEventListener("load", getMovie); // Remove if you don’t want auto-load
+window.addEventListener("load", getMovie);
