@@ -15,6 +15,7 @@ A sleek, responsive web app that lets users search for any movie or series and g
 ![pic 1](https://github.com/user-attachments/assets/ac49ca4a-b900-4c44-ac4b-9de11cd27fec)
 ![pic 2](https://github.com/user-attachments/assets/f1063cbe-0047-4fbe-948d-1f98a9a3ce81)
 ![pic 3](https://github.com/user-attachments/assets/636d8aaf-7392-4921-bd07-46937d1394f0)
+![phone](https://github.com/user-attachments/assets/6b08d70e-4e02-42f5-bbf1-cd1b541cf612)
 
 
 ## 🛠️ Technologies Used
