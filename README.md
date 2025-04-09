@@ -51,6 +51,9 @@ My Cinema
 1. Clone this repository  
 git clone https://github.com/abdelsalam101/movie-guide-app
 Open index.html in your browser
+OR
+Use the live version directly:
+https://abdelsalam101.github.io/movie-guide-app/
 
 Start searching for any movie or show!
 
